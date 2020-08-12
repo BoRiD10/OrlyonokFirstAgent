@@ -11,7 +11,7 @@ public class Agent extends jade.core.Agent {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-//        System.out.println(getLocalName() + " was Born ");
+        System.out.println(getLocalName() + " was Born ");
         //Добавление и запуск поведений
 //        addBehaviour(new Behavior());
 //        addBehaviour(new OneShotBehavior());
@@ -19,12 +19,12 @@ public class Agent extends jade.core.Agent {
 //        addBehaviour(new WackerBehavior(this, 10000));
 
         //Обмен сообщениями
-        if (getLocalName().equals("Mike")){
-            addBehaviour(new SendMessageToJosh());
-        } else if (getLocalName().equals("Josh")){
-            addBehaviour(new SendMessageToMike());
-        } else {
-            System.out.println("Недопустимый агент");
-        }
+//        if (getLocalName().equals("Mike")){
+//            addBehaviour(new SendMessageToJosh());
+//        } else if (getLocalName().equals("Josh")){
+//            addBehaviour(new SendMessageToMike());
+//        } else {
+//            System.out.println("Недопустимый агент");
+//        }
     }
 }
